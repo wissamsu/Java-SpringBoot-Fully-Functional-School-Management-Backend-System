@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Source folder
+    "rootDir": "./src/main/resources/templates",
+    // Output folder (served by Spring Boot)
+    "outDir": "./src/main/resources/static",
+
+    // JavaScript settings
+    "module": "es6",            // Browser-friendly module format
+    "target": "es6",            // Output modern JS
+    "strict": true,             // Enable strict type checking
+    "esModuleInterop": true,    // Allow default imports
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,          // Optional: generate .map files
+    "isolatedModules": true
+  },
+  "include": [
+    "src/main/resources/templates/**/*.ts"  // Include all TS files in templates
+  ],
+  "exclude": [
+    "node_modules",
+    "target"   // Exclude Maven build folder
+  ]
+}
+
